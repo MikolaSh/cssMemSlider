@@ -1,0 +1,203 @@
+.slider{
+    padding: 5% 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: rgb(38, 2, 104);
+}
+
+
+
+input{
+    opacity: 0;
+}
+img{
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+    margin-right: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-viewer{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: auto;
+    height: auto;
+    max-height: 70vh;
+    max-width: 70%;
+    overflow: hidden;
+}
+
+.slider-viewer img{
+    position: relative;
+}
+
+.buttom{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: auto;
+    height: auto;
+    max-height: 70vh;
+    max-width: 70%;
+    justify-content: space-between;
+}
+
+.text{
+    color: white;
+    overflow: hidden;
+    display: flex;
+    width: 70%;
+    height: 10%;
+}
+p{
+    transition: all 1s ease-in-out;
+    position: relative;
+    margin-right: 100%;
+}
+
+.bullets{
+    width: 30%;
+    display: flex;
+}
+
+.bullet{
+    cursor: pointer;
+
+}
+
+.bullet input{
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.checkmark{
+    margin: 0.5em;
+    display: block;
+    width: 5px;
+    height: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid rgb(74, 101, 255);
+    background-color: rgb(74, 101, 255);
+}
+
+#r1:checked ~ .buttom > .bullets > .bullet1 > span,
+#r2:checked ~ .buttom > .bullets > .bullet2 > span,
+#r3:checked ~.buttom > .bullets > .bullet3 > span,
+#r4:checked ~.buttom > .bullets > .bullet4 > span,
+#r5:checked ~.buttom > .bullets > .bullet5 > span{
+    background-color: white  ;
+}
+
+#r1:checked ~ .slider-viewer > img{
+    left: 5%;
+}
+#r2:checked ~ .slider-viewer > img{
+    left: -118%;
+}
+#r3:checked ~ .slider-viewer > img{
+    left: -232%;
+}
+#r4:checked ~ .slider-viewer > img{
+    left: -337%;
+}
+#r5:checked ~ .slider-viewer > img{
+    left:  -435%;
+}
+
+
+#r1:checked ~ .buttom > .text > p{
+    left: 0;
+}
+#r2:checked ~ .buttom > .text > p{
+    left: -123%;
+}
+#r3:checked ~ .buttom > .text > p{
+    left: -228%;
+}
+#r4:checked ~ .buttom > .text > p{
+    left: -335%;
+}
+#r5:checked ~ .buttom > .text > p{
+    left:  -445%;
+}
+
+
+.bullet:hover > .checkmark{
+    background-color: white;
+    border-color: white;
+}
+
+
+@media(max-width:768px){
+    .buttom{
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+
+    .text{
+
+        width: 100%;
+
+    }
+    p{
+        margin-right: 100%;
+    }
+    
+    .bullets{
+        width: 100%;
+        display: flex;
+    }
+    #r1:checked ~ .slider-viewer > img{
+        left: 0;
+    }
+    #r2:checked ~ .slider-viewer > img{
+        left: -150%;
+    }
+    #r3:checked ~ .slider-viewer > img{
+        left: -300%;
+    }
+    #r4:checked ~ .slider-viewer > img{
+        left: -450%;
+    }
+    #r5:checked ~ .slider-viewer > img{
+        left:  -600%;
+    }
+
+    #r1:checked ~ .buttom > .text > p{
+        left: 0;
+    }
+    #r2:checked ~ .buttom > .text > p{
+        left: -137%;
+    }
+    #r3:checked ~ .buttom > .text > p{
+        left: -245%;
+    }
+    #r4:checked ~ .buttom > .text > p{
+        left: -358%;
+    }
+    #r5:checked ~ .buttom > .text > p{
+        left:  -474%;
+    }
+}
+@media(max-width:425px){
+
+    #r1:checked ~ .buttom > .text > p{
+        left: 0;
+    }
+    #r2:checked ~ .buttom > .text > p{
+        left: -168%;
+    }
+    #r3:checked ~ .buttom > .text > p{
+        left: -284%;
+    }
+    #r4:checked ~ .buttom > .text > p{
+        left: -407%;
+    }
+    #r5:checked ~ .buttom > .text > p{
+        left:  -535%;
+    }
+}
