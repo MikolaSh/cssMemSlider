@@ -5,9 +5,7 @@
     background-color: rgb(38, 2, 104);
 }
 
-div{
-    border: 3px solid red;
-}
+
 
 input{
     opacity: 0;
@@ -15,7 +13,7 @@ input{
 img{
     object-fit: cover;
     transition: all 1s ease-in-out;
-    margin-right: 20%;
+    margin-right: 50%;
     width: 100%;
     height: 100%;
 }
@@ -94,19 +92,19 @@ p{
 }
 
 #r1:checked ~ .slider-viewer > img{
-    left: 0;
+    left: 5%;
 }
 #r2:checked ~ .slider-viewer > img{
-    left: -128%;
+    left: -118%;
 }
 #r3:checked ~ .slider-viewer > img{
-    left: -235%;
+    left: -232%;
 }
 #r4:checked ~ .slider-viewer > img{
-    left: -344%;
+    left: -337%;
 }
 #r5:checked ~ .slider-viewer > img{
-    left:  -456%;
+    left:  -435%;
 }
 
 
@@ -114,16 +112,16 @@ p{
     left: 0;
 }
 #r2:checked ~ .buttom > .text > p{
-    left: -120%;
+    left: -123%;
 }
 #r3:checked ~ .buttom > .text > p{
-    left: -240%;
+    left: -228%;
 }
 #r4:checked ~ .buttom > .text > p{
-    left: -350%;
+    left: -335%;
 }
 #r5:checked ~ .buttom > .text > p{
-    left:  -455%;
+    left:  -445%;
 }
 
 
@@ -152,5 +150,54 @@ p{
     .bullets{
         width: 100%;
         display: flex;
+    }
+    #r1:checked ~ .slider-viewer > img{
+        left: 0;
+    }
+    #r2:checked ~ .slider-viewer > img{
+        left: -150%;
+    }
+    #r3:checked ~ .slider-viewer > img{
+        left: -300%;
+    }
+    #r4:checked ~ .slider-viewer > img{
+        left: -450%;
+    }
+    #r5:checked ~ .slider-viewer > img{
+        left:  -600%;
+    }
+
+    #r1:checked ~ .buttom > .text > p{
+        left: 0;
+    }
+    #r2:checked ~ .buttom > .text > p{
+        left: -137%;
+    }
+    #r3:checked ~ .buttom > .text > p{
+        left: -245%;
+    }
+    #r4:checked ~ .buttom > .text > p{
+        left: -358%;
+    }
+    #r5:checked ~ .buttom > .text > p{
+        left:  -474%;
+    }
+}
+@media(max-width:425px){
+
+    #r1:checked ~ .buttom > .text > p{
+        left: 0;
+    }
+    #r2:checked ~ .buttom > .text > p{
+        left: -168%;
+    }
+    #r3:checked ~ .buttom > .text > p{
+        left: -284%;
+    }
+    #r4:checked ~ .buttom > .text > p{
+        left: -407%;
+    }
+    #r5:checked ~ .buttom > .text > p{
+        left:  -535%;
     }
 }
