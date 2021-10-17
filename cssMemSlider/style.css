@@ -12,6 +12,7 @@ input{
     opacity: 0;
 }
 img{
+    transition: all 1s ease-in-out;
     margin-right: 20%;
     width: auto;
     height: auto;
@@ -87,6 +88,22 @@ p{
 }
 
 input[type="radio"]:checked+label { font-weight: bold; }
+
+#r1:checked ~ .slider-viewer > img{
+    left: 0;
+}
+#r2:checked ~ .slider-viewer > img{
+    left: -120%;
+}
+#r3:checked ~ .slider-viewer > img{
+    left: -240%;
+}
+#r4:checked ~ .slider-viewer > img{
+    left: -350%;
+}
+#r5:checked ~ .slider-viewer > img{
+    left:  -455%;
+}
 
 
 
